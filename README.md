@@ -1,2 +1,3 @@
-# Estrutura de Dados
-# Exemplo de Pilha
+# Estrutura de Dados - Pilha
+# [LIFO: Last in, first out]
+Exemplo de Pilha 

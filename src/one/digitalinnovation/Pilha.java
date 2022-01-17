@@ -1,16 +1,16 @@
 package one.digitalinnovation;
 
-public class Pilha {
+public class Pilha<T> {
 	
-	private No refNoEntradaPilha;
+	private No<T> refNoEntradaPilha;
 	
 	public Pilha() {
 		this.refNoEntradaPilha = null;
 	}
 	
-	public void push(No novoNo) {
-		No refAuxiliar = refNoEntradaPilha;
-		refNoEntradaPilha = novoNo;
+	public void push(T novoNo) {
+		No<T> refAuxiliar = refNoEntradaPilha;
+		refNoEntradaPilha = new No(novoNo);
 		refNoEntradaPilha.setRefNo(refAuxiliar);
 	}
 	
